@@ -25,5 +25,5 @@ jobs:
         path: config.json
 
     - name: Dump
-      run: echo ${{ toJson(steps.load-config.outputs) }}
+      run: echo ${{ steps.load-config.outputs.APP_NAME }}
 
