@@ -19,7 +19,11 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Test
+      id: load-config
       uses: ./
       with:
         path: config.json
+
+    - name: Dump
+      run: echo ${{ steps.load-config.outputs }}
 
