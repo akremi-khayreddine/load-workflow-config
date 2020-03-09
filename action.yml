@@ -1,0 +1,9 @@
+name: 'Dx Workflow load workflow config action'
+description: 'Dx Workflow load workflow config action'
+inputs:
+  path:
+    description: 'Config file path'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
